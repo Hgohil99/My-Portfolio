@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    background: #007BFF;
+    color: white;
+    padding: 1.5em 0;
+    position: relative;
+}
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 1em;
+    animation: scaleUp 1.5s ease-in-out;
+}
+@keyframes scaleUp {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Navigation Styles */
+nav {
+    text-align: center;
+    margin: 1em 0;
+}
+nav a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #0056b3;
+}
+
+/* Section Styles */
+section {
+    margin: 2em;
+    padding: 1.5em;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1s ease-in-out;
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+section h2 {
+    color: #007BFF;
+}
+
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+input, textarea, button {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background: #0056b3;
+}
+
+.resume-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Gradient background */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Button shadow */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition */
+    text-align: center;
+}
+
+.resume-button:hover {
+    background: linear-gradient(90deg, #feb47b, #ff7e5f); /* Reverse gradient on hover */
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+.resume-button:active {
+    transform: translateY(1px); /* Press-down effect */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 2em;
+    padding: 1em 0;
+    background: #333;
+    color: white;
+}
